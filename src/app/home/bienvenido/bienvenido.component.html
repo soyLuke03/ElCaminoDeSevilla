@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <label>Nombre</label>
+            <input type="text" maxlength="12" [(ngModel)]="nombre" name="nombre" placeholder="Nombre del personaje...">
+            <hr>
+            <label>Elije una clase</label>
+            <select (click)="elegirClase(clase)" [(ngModel)]="clase">
+                <option>Guerrero</option>
+                <option>Arquero</option>
+                <option>Asesino</option>
+                <option>Paladin</option>
+            </select>
+            <hr>
+            <label>Estadisticas iniciales</label>
+            <div style="border-style: ridge;">
+                <h5>Vida máxima: {{ personaje.vida }}</h5>
+                <h5>Armadura: {{ personaje.armadura }}</h5>
+                <h5>Daño de ataque: {{ personaje.dmgAtaque }}</h5>
+                <h5>Probabilidad crítica: {{ personaje.probCrit }}%</h5>
+                <h5>Daño crítico: {{ personaje.dmgCritico }}</h5>
+                <h5>Precisión: {{ personaje.precision }}%</h5>
+                <h5>Agilidad: {{ personaje.agilidad }}</h5>
+            </div>
+            <hr>
+            <input type="button" value="Crear perfil" class="btn btn-success" [disabled]="!(nombre && personaje.clase)" (click)="crearPerfil()">
+            <p *ngIf="!(personaje.nombre && personaje.clase)">Debes elegir nombre y clase</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container-flex">
+    <div class="row opciones">
+        <div class="col-4 opcion" (click)="caminar()"> <h1> Ir a andar </h1></div>
+        <div class="col-4 opcion" (click)="dejarDeCaminar()"> <h1> Dejar de andar </h1> </div>
+        <div class="col-4 opcion"> <h1> Mirar el inventario </h1> </div>
+    </div>
+    <div class="row opciones">
+        <div class="col-4 opcion-personaje container-flex">
+            <h4> <b>Info del jugador</b> </h4>
+            <div class="row">
+                <div class="col-6">
+                    <p> <b>Nombre:</b> {{ personaje.nombre }} </p>
+                    <p> <b>exp:</b> {{ personaje.exp }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>nivel:</b> {{ personaje.nivel }} </p>
+                    <p> <b>exp restante:</b> {{ personaje.expSubirLvl }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>vida:</b> {{ personaje.vida }} </p>
+                    <p> <b>armadura:</b> {{ personaje.armadura }} </p>
+                    <p> <b>dmgAtaque:</b> {{ personaje.dmgAtaque }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>probCrit:</b> {{ personaje.probCrit }} </p>
+                    <p> <b>dmgCritico:</b> {{ personaje.dmgCritico }} </p>
+                    <p> <b>agilidad:</b> {{ personaje.agilidad }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>precision:</b> {{ personaje.precision }} </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 opcion"> <h1> Soy: {{ personaje.nombre }} </h1> </div>
+        <div class="col-4 opcion">  </div>
+    </div>
+    <div class="row opciones">
+        <div class="col-4 opcion"> <h1></h1> </div>
+        <div class="col-4 opcion"> <h1></h1> </div>
+        <div class="col-4 opcion"> <h1></h1> </div>
+    </div>
+</div>
