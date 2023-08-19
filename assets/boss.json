@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "Santiago Abascal",
+        "nivel": 0,
+        "exp": 500,
+        "vida": 70,
+        "armadura": 15,
+        "dmgAtaque": 15,
+        "probCrit": 30,
+        "dmgCritico": 30,
+        "precision": 60,
+        "agilidad": 120
+    },
+    {
+        "nombre": "Franco",
+        "nivel": 0,
+        "exp": 650,
+        "vida": 0,
+        "armadura": 5,
+        "dmgAtaque": 25,
+        "probCrit": 60,
+        "dmgCritico": 2,
+        "precision": 40,
+        "agilidad": 100
+    },
+    {
+        "nombre": "Juancarlos",
+        "nivel": 0,
+        "exp": 700,
+        "vida": 90,
+        "armadura": 2,
+        "dmgAtaque": 30,
+        "probCrit": 10,
+        "dmgCritico": 100,
+        "precision": 70,
+        "agilidad": 250
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Iniesta de Kalipse",
+        "nivel": 0,
+        "exp": 300,
+        "vida": 30,
+        "armadura": 5,
+        "dmgAtaque": 10,
+        "probCrit": 30,
+        "dmgCritico": 20,
+        "precision": 60,
+        "agilidad": 80
+    },
+    {
+        "nombre": "Paco",
+        "nivel": 0,
+        "exp": 280,
+        "vida": 5,
+        "armadura": 1,
+        "dmgAtaque": 1,
+        "probCrit": 40,
+        "dmgCritico": 2,
+        "precision": 40,
+        "agilidad": 100
+    },
+    {
+        "nombre": "El Nano",
+        "nivel": 0,
+        "exp": 310,
+        "vida": 20,
+        "armadura": 1,
+        "dmgAtaque": 10,
+        "probCrit": 0,
+        "dmgCritico": 14,
+        "precision": 80,
+        "agilidad": 200
+    },
+    {
+        "nombre": "Slapchop",
+        "nivel": 0,
+        "exp": 190,
+        "vida": 15,
+        "armadura": 3,
+        "dmgAtaque": 5,
+        "probCrit": 30,
+        "dmgCritico": 10,
+        "precision": 100,
+        "agilidad": 100
+    },
+    {
+        "nombre": "Juan",
+        "nivel": 0,
+        "exp": 300,
+        "vida": 25,
+        "armadura": 0,
+        "dmgAtaque": 3,
+        "probCrit": 20,
+        "dmgCritico": 6,
+        "precision": 100,
+        "agilidad": 190
+    }
+]

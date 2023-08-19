@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Vara necesariamente grande",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 5,
+            "armadura": 0,
+            "precision": 0,
+            "agilidad": -10,
+            "dañoCritico": 10,
+            "probabilidadCritica": 5
+        }
+    },
+    {
+        "nombre": "Espada de madera",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 8,
+            "armadura": 0,
+            "precision": 0,
+            "agilidad": 0,
+            "dañoCritico": 0,
+            "probabilidadCritica": 0
+        }
+    },
+    {
+        "nombre": "Daga oculta",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 12,
+            "armadura": 0,
+            "precision": 5,
+            "agilidad": 10,
+            "dañoCritico": 0,
+            "probabilidadCritica": 0
+        }
+    },
+    {
+        "nombre": "Tirachinas del chino",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 7,
+            "armadura": 0,
+            "precision": -5,
+            "agilidad": 15,
+            "dañoCritico": 15,
+            "probabilidadCritica": 0
+        }
+    },
+    {
+        "nombre": "Espadón de arcilla",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 10,
+            "armadura": 5,
+            "precision": 0,
+            "agilidad": -15,
+            "dañoCritico": 20,
+            "probabilidadCritica": 0
+        }
+    }
+]
