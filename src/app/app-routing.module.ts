@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home/home.component';
-import { ErrorComponent } from './error/error/error.component';
 import { BienvenidoComponent } from './home/bienvenido/bienvenido.component';
 import { CaminarComponent } from './caminar/caminar/caminar.component';
 import { BatallaComponent } from './batalla/batalla/batalla.component';
 import { InventarioComponent } from './inventario/inventario/inventario.component';
+import { ExtrasComponent } from './extras/extras/extras.component';
 
 const routes: Routes = [
   { 
@@ -21,8 +21,12 @@ const routes: Routes = [
     component: CaminarComponent
   },
   { 
-    path: 'caminar/batalla/:boss/:tipo',
+    path: 'caminar/batalla/:id/:tipo',
     component: BatallaComponent
+  },
+  { 
+    path: 'extras',
+    component: ExtrasComponent
   },
   { 
     path: 'inventario',
@@ -30,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: ErrorComponent
+    component: BienvenidoComponent
   }
 ];
 

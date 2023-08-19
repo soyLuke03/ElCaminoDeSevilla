@@ -1,12 +1,24 @@
 
 export interface Personaje {
     nombre: string,
-    clase: string,
+    clase: string | undefined,
     nivel: number,
     exp: number,
     expSubirLvl: number,
     vidaMax: number,
     vida: number,
+    armadura: number,
+    dmgAtaque: number,
+    probCrit: number,
+    dmgCritico: number,
+    precision: number,
+    agilidad: number,
+    inventario: Objeto[]
+}
+
+export interface Clase {
+    nombre: string,
+    vidaMax: number,
     armadura: number,
     dmgAtaque: number,
     probCrit: number,
@@ -57,15 +69,21 @@ export interface Boss {
 
 export interface Estadisticas {
     vida: number,
-    daño: number,
+    dmg: number,
     armadura: number,
     precision: number,
     agilidad: number,
-    dañoCritico: number,
+    dmgCritico: number,
     probabilidadCritica: number
 }
 
 export interface Objeto {
     nombre: string
     estadisticas: Estadisticas
+}
+
+
+export interface TipoEnemigo {
+    id: string,
+    tipo: string
 }

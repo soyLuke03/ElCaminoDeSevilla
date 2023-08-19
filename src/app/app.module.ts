@@ -9,7 +9,7 @@ import { HomeModule } from './home/home.module';
 import { InventarioModule } from './inventario/inventario.module';
 import { BatallaModule } from './batalla/batalla.module';
 import { ErrorModule } from './error/error.module';
-import { commonService } from './homeservice.service';
+import { CommonService } from '../services/homeservice.service';
 import { RouterModule } from '@angular/router';
 import { SuperiorComponent } from './menu-superior/superior/superior.component';
 import { OpcionesComponent } from './menu-opciones/opciones/opciones.component';
@@ -35,7 +35,7 @@ import { CaminarModule } from './caminar/caminar.module';
     FormsModule
   ],
   providers: [
-    commonService
+    CommonService
   ],
   bootstrap: [AppComponent]
 })

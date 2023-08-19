@@ -1,8 +1,8 @@
 <div class="container-flex">
     <div class="row opciones">
-        <div class="col-4 opcion" (click)="caminar()"> <h1> Ir a andar </h1></div>
-        <div class="col-4 opcion" (click)="dejarDeCaminar()"> <h1> Dejar de andar </h1> </div>
-        <div class="col-4 opcion"> <h1> Mirar el inventario </h1> </div>
+        <div class="col-4 opcion" (click)="subirPoder()"> <h1> + Poder </h1></div>
+        <div class="col-4 opcion" (click)="bajarPoder()"> <h1> - Poder </h1> </div>
+        <div class="col-4 opcion" (click)="modoDios()"> <h1> Modo Dios </h1> </div>
     </div>
     <div class="row opciones">
         <div class="col-4">
@@ -31,11 +31,11 @@
             </div>
         </div>
         <div class="col-4 opcion"> <h1> Soy: {{ personaje.nombre }} </h1> </div>
-        <div class="col-4 opcion">  </div>
+        <div class="col-4 opcion" (click)="onePunch()"> <h1> One Punch </h1> </div>
     </div>
     <div class="row opciones">
-        <div class="col-4 opcion"> <h1></h1> </div>
-        <div class="col-4 opcion"> <h1></h1> </div>
-        <div class="col-4 opcion"> <h1></h1> </div>
+        <div class="col-4 opcion" (click)="subirNivel()"> <h1> Subir de Nivel </h1> </div>
+        <div class="col-4 opcion" (click)="infalible()"> <h1> Infalible </h1> </div>
+        <div class="col-4 opcion" (click)="fuerte()"> <h1> Fuerte </h1> </div>
     </div>
 </div>

@@ -1,30 +1,39 @@
 import { Component, OnInit } from '@angular/core';
-import { Personaje } from 'src/app/interfaces';
-import { commonService } from 'src/app/homeservice.service';
+import { Clase, Personaje } from 'src/app/interfaces';
+import { CommonService } from 'src/services/homeservice.service';
+import { HomeService } from '../home.service';
+import { VARIABLES } from 'src/services/PUBLIC-VARIABLES';
 @Component({
   selector: 'app-bienvenido',
   templateUrl: './bienvenido.component.html',
   styleUrls: ['./bienvenido.component.css']
 })
 export class BienvenidoComponent implements OnInit {
-  
-  clase:string = ""
-  nombre:string = ""
 
-  constructor(private service:commonService) { }
+  clase: string = ""
+  nombre: string = ""
+
+  listaClases: Clase[] = []
+
+  constructor(private service: CommonService, private homeService: HomeService) { }
 
   ngOnInit(): void {
+    this.homeService.getClases().then((resp) => { 
+      this.listaClases = resp 
+      console.log(this.listaClases);
+    })
+
   }
 
 
 
-  personaje:Personaje = {
+  personaje: Personaje = {
     nombre: "",
-    clase: "",
+    clase: undefined,
     inventario: [],
     nivel: 1,
     exp: 0,
-    expSubirLvl: 1000,
+    expSubirLvl: VARIABLES.EXPERIENCIA_NIVEL_1,
     vidaMax: 0,
     vida: 0,
     armadura: 0,
@@ -35,62 +44,43 @@ export class BienvenidoComponent implements OnInit {
     agilidad: 0
   }
 
-  elegirClase(clase:string) {
-    switch (clase) {
+  elegirClase() {
+    switch (this.clase) {
       case "Guerrero":
-        this.personaje.clase = "Guerrero"
-        this.personaje.vida = 20
-        this.personaje.nombre = this.nombre
-        this.personaje.armadura = 5
-        this.personaje.dmgAtaque = 5
-        this.personaje.probCrit = 10
-        this.personaje.dmgCritico = this.personaje.dmgAtaque * 2
-        this.personaje.precision = 80
-        this.personaje.agilidad = 100
-      break;
+        this.asignarAtributos(0);
+        break;
       case "Arquero":
-        this.personaje.clase = "Arquero"
-        this.personaje.vida = 15
-        this.personaje.nombre = this.nombre
-        this.personaje.armadura = 2
-        this.personaje.dmgAtaque = 7
-        this.personaje.probCrit = 25
-        this.personaje.dmgCritico = this.personaje.dmgAtaque * 3
-        this.personaje.precision = 40
-        this.personaje.agilidad = 300
-      break;
+        this.asignarAtributos(1);
+        break;
       case "Asesino":
-        this.personaje.clase = "Asesino"
-        this.personaje.vida = 10
-        this.personaje.nombre = this.nombre
-        this.personaje.armadura = 1
-        this.personaje.dmgAtaque = 8
-        this.personaje.probCrit = 5
-        this.personaje.dmgCritico = this.personaje.dmgAtaque * 1.2
-        this.personaje.precision = 95
-        this.personaje.agilidad = 180
-      break;
+        this.asignarAtributos(2);
+        break;
       case "Paladin":
-        this.personaje.clase = "Paladin"
-        this.personaje.vida = 30
-        this.personaje.nombre = this.nombre
-        this.personaje.armadura = 7
-        this.personaje.dmgAtaque = 4
-        this.personaje.probCrit = 30
-        this.personaje.dmgCritico = this.personaje.dmgAtaque * 1.2
-        this.personaje.precision = 70
-        this.personaje.agilidad = 90
-      break;
+        this.asignarAtributos(3);
+        break;
     }
   }
 
-  crearPerfil(){
+  private asignarAtributos(idClase: number) {
+    this.personaje.clase = this.listaClases[idClase].nombre;
+    this.personaje.agilidad = parseFloat(this.listaClases[idClase].agilidad.toFixed(2));
+    this.personaje.armadura = parseFloat(this.listaClases[idClase].armadura.toFixed(2));
+    this.personaje.dmgAtaque = parseFloat(this.listaClases[idClase].dmgAtaque.toFixed(2));
+    this.personaje.dmgCritico = parseFloat(this.listaClases[idClase].dmgCritico.toFixed(2));
+    this.personaje.inventario = this.listaClases[idClase].inventario;
+    this.personaje.nombre = this.nombre;
+    this.personaje.precision = parseFloat(this.listaClases[idClase].precision.toFixed(2));
+    this.personaje.probCrit = parseFloat(this.listaClases[idClase].probCrit.toFixed(2));
+    this.personaje.vidaMax = parseFloat(this.listaClases[idClase].vidaMax.toFixed(2));
+  }
+
+  crearPerfil() {
     this.personaje.nombre = this.nombre
     this.service.crearPerfil(this.personaje)
 
     this.personaje = {
       nombre: "",
-      clase: "",
+      clase: undefined,
       inventario: [],
       nivel: 1,
       exp: 0,

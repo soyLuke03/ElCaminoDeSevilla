@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { commonService } from 'src/app/homeservice.service';
+import { CommonService } from 'src/services/homeservice.service';
 import { Personaje } from 'src/app/interfaces';
 import Swal from 'sweetalert2';
 
@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private service:commonService, private router:Router) { }
+  constructor(private service:CommonService, private router:Router) { }
 
 
   personaje:Personaje = this.service.perfil
@@ -29,6 +29,10 @@ export class HomeComponent implements OnInit {
       title: "Te has curado"
     })
     this.personaje.vida = this.personaje.vidaMax
+  }
+
+  extras(){
+    this.router.navigate(['extras'])
   }
 
   inventario(){

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { commonService } from 'src/app/homeservice.service';
+import { CommonService } from 'src/services/homeservice.service';
 import { Objeto, Personaje } from 'src/app/interfaces';
 
 @Component({
@@ -9,10 +9,17 @@ import { Objeto, Personaje } from 'src/app/interfaces';
 })
 export class InventarioComponent implements OnInit {
 
-  constructor(private service:commonService) { }
+  constructor(private service:CommonService) { }
 
   personaje:Personaje = this.service.perfil
   inventario:Objeto[] = this.personaje.inventario
+
+  armaEquipada:Objeto | undefined;
+  cascoEquipado:Objeto | undefined;
+  pecheraEquipada:Objeto | undefined;
+  pantalonEquipado:Objeto | undefined;
+  botasEquipadas:Objeto | undefined;
+  escudoEquipado:Objeto | undefined;
 
   
   ngOnInit(): void {

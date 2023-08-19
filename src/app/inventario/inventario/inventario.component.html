@@ -1,5 +1,51 @@
 <h1>INVENTARIO DE OBJETOS</h1>
 <hr>
-<h3 *ngIf="inventario.length<=0">No tienes objetos todavía</h3>
-<h3 *ngIf="inventario.length>0">Tus objetos</h3>
-<p *ngFor="let objeto of inventario"> {{ objeto.nombre }} </p>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h4> <b>Info del jugador</b> </h4>
+            <div class="row">
+                <div class="col-6">
+                    <p> <b>Nombre:</b> {{ personaje.nombre }} </p>
+                    <p> <b>Clase:</b> {{ personaje.clase }} </p>
+                    <p> <b>vida:</b> {{ personaje.vida.toFixed(2) }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>nivel:</b> {{ personaje.nivel }} </p>
+                    <p> <b>exp:</b> {{ personaje.exp }} </p>
+                    <p> <b>exp restante:</b> {{ personaje.expSubirLvl }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>armadura:</b> {{ personaje.armadura.toFixed(2) }} </p>
+                    <p> <b>dmgAtaque:</b> {{ personaje.dmgAtaque.toFixed(2) }} </p>
+                    <p> <b>probCrit:</b> {{ personaje.probCrit.toFixed(2) }} </p>
+                </div>
+                <div class="col-6">
+                    <p> <b>dmgCritico:</b> {{ personaje.dmgCritico.toFixed(2) }} </p>
+                    <p> <b>agilidad:</b> {{ personaje.agilidad.toFixed(2) }} </p>
+                    <p> <b>precision:</b> {{ personaje.precision.toFixed(2) }} </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <h3 *ngIf="inventario.length<=0">No tienes objetos todavía</h3>
+        <h3 *ngIf="inventario.length>0">Tus objetos</h3>
+        <div class="col-3 objeto" *ngFor="let objeto of inventario">
+            <h5>{{ objeto.nombre }}</h5>
+            <ul>
+                <li>Vida: {{ objeto.estadisticas.vida }}</li>
+                <li>Daño: {{ objeto.estadisticas.dmg }}</li>
+                <li>Armadura: {{ objeto.estadisticas.armadura }}</li>
+                <li>Precision: {{ objeto.estadisticas.precision }}</li>
+                <li>Agilidad: {{ objeto.estadisticas.agilidad }}</li>
+                <li>Dmg Critico: {{ objeto.estadisticas.dmgCritico }}</li>
+                <li>Prob Critica: {{ objeto.estadisticas.probabilidadCritica }}</li>
+            </ul>
+            
+        </div>
+   
+        
+   
+    </div>
+</div>

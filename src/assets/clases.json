@@ -1,0 +1,194 @@
+[
+    {
+        "nombre": "Guerrero",
+        "vidaMax": 290,
+        "armadura": 40,
+        "dmgAtaque": 40,
+        "probCrit": 20,
+        "dmgCritico": 80,
+        "precision": 70,
+        "agilidad": 330,
+        "inventario": [
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            },
+            {
+                "nombre": "Espada de madera",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 8,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 0,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            }
+        ]
+    },
+    {
+        "nombre": "Asesino",
+        "vidaMax": 200,
+        "armadura": 20,
+        "dmgAtaque": 80,
+        "probCrit": 40,
+        "dmgCritico": 120,
+        "precision": 90,
+        "agilidad": 410,
+        "inventario": [
+            {
+                "nombre": "Daga oculta",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 12,
+                    "armadura": 0,
+                    "precision": 5,
+                    "agilidad": 10,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                }
+            }
+        ]
+    },
+    {
+        "nombre": "Arquero",
+        "vidaMax": 180,
+        "armadura": 10,
+        "dmgAtaque": 90,
+        "probCrit": 50,
+        "dmgCritico": 180,
+        "precision": 40,
+        "agilidad": 400,
+        "inventario": [
+            {
+                "nombre": "Tirachinas del chino",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 7,
+                    "armadura": 0,
+                    "precision": -5,
+                    "agilidad": 15,
+                    "dmgCritico": 15,
+                    "probabilidadCritica": 0
+                }
+            }
+        ]
+    },
+    {
+        "nombre": "Paladin",
+        "vidaMax": 350,
+        "armadura": 55,
+        "dmgAtaque": 40,
+        "probCrit": 35,
+        "dmgCritico": 90,
+        "precision": 70,
+        "agilidad": 260,
+        "inventario": [
+            {
+                "nombre": "Espadón de arcilla",
+                "estadisticas": {
+                    "vida": 0,
+                    "dmg": 10,
+                    "armadura": 5,
+                    "precision": 0,
+                    "agilidad": -15,
+                    "dmgCritico": 20,
+                    "probabilidadCritica": 0
+                }
+            }
+        ]
+    }
+]

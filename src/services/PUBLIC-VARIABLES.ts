@@ -1,0 +1,3 @@
+export const VARIABLES = {
+    EXPERIENCIA_NIVEL_1: 1000
+}

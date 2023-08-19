@@ -1,21 +1,22 @@
 import { Injectable } from '@angular/core';
-import { Enemigo, Personaje, MiniBoss, Boss, Objeto } from './interfaces';
+import { Enemigo, Personaje, MiniBoss, Boss, Objeto } from '../app/interfaces';
 import { Router } from '@angular/router';
+import { VARIABLES } from './PUBLIC-VARIABLES';
 
 @Injectable({
   providedIn: 'root'
 })
-export class commonService {
+export class CommonService {
 
   constructor(private router: Router) { }
 
   perfil: Personaje = {
     nombre: "Dummy",
-    clase: "Guerrero",
+    clase: undefined,
     inventario: [],
     nivel: 1,
     exp: 0,
-    expSubirLvl: 1000,
+    expSubirLvl: VARIABLES.EXPERIENCIA_NIVEL_1,
     vidaMax: 20,
     vida: 20,
     armadura: 5,
@@ -69,8 +70,8 @@ export class commonService {
     estadisticas: {
       agilidad: 0,
       armadura: 0,
-      daño: 0,
-      dañoCritico: 0,
+      dmg: 0,
+      dmgCritico: 0,
       precision: 0,
       probabilidadCritica: 0,
       vida: 0

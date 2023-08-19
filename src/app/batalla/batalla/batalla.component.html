@@ -11,29 +11,28 @@
         </div>
     </div>
     <div class="row opciones">
-        <div class="col-4 opcion-personaje container-flex">
+        <div class="col-4">
             <h4> <b>Info del jugador</b> </h4>
             <div class="row">
                 <div class="col-6">
                     <p> <b>Nombre:</b> {{ personaje.nombre }} </p>
-                    <p> <b>exp:</b> {{ personaje.exp }} </p>
+                    <p> <b>Clase:</b> {{ personaje.clase }} </p>
+                    <p> <b>vida:</b> {{ personaje.vida.toFixed(2) }} </p>
                 </div>
                 <div class="col-6">
                     <p> <b>nivel:</b> {{ personaje.nivel }} </p>
+                    <p> <b>exp:</b> {{ personaje.exp }} </p>
                     <p> <b>exp restante:</b> {{ personaje.expSubirLvl }} </p>
                 </div>
                 <div class="col-6">
-                    <p> <b>vida:</b> {{ personaje.vida }} </p>
-                    <p> <b>armadura:</b> {{ personaje.armadura }} </p>
-                    <p> <b>dmgAtaque:</b> {{ personaje.dmgAtaque }} </p>
+                    <p> <b>armadura:</b> {{ personaje.armadura.toFixed(2) }} </p>
+                    <p> <b>dmgAtaque:</b> {{ personaje.dmgAtaque.toFixed(2) }} </p>
+                    <p> <b>probCrit:</b> {{ personaje.probCrit.toFixed(2) }} </p>
                 </div>
                 <div class="col-6">
-                    <p> <b>probCrit:</b> {{ personaje.probCrit }} </p>
-                    <p> <b>dmgCritico:</b> {{ personaje.dmgCritico }} </p>
-                    <p> <b>agilidad:</b> {{ personaje.agilidad }} </p>
-                </div>
-                <div class="col-6">
-                    <p> <b>precision:</b> {{ personaje.precision }} </p>
+                    <p> <b>dmgCritico:</b> {{ personaje.dmgCritico.toFixed(2) }} </p>
+                    <p> <b>agilidad:</b> {{ personaje.agilidad.toFixed(2) }} </p>
+                    <p> <b>precision:</b> {{ personaje.precision.toFixed(2) }} </p>
                 </div>
             </div>
         </div>
@@ -47,26 +46,34 @@
             <p> <b>Info del enemigo</b> </p>
             <div class="row">
                 <div class="col-6">
-                    <p> <b>Nombre:</b> {{ oponente.nombre }} </p>
-                    <p> <b>nivel:</b> {{ oponente.nivel }} </p>
+                    <p> <b>Nombre:</b> {{ rival.nombre }} </p>
+                    <p> <b>nivel:</b> {{ rival.nivel }} </p>
                 </div>
                 <div class="col-6">
-                    <p> <b>exp:</b> {{ oponente.exp }} </p>
-                    <p> <b>vida:</b> {{ oponente.vida }} </p>
+                    <p> <b>exp:</b> {{ rival.exp }} </p>
+                    <p> <b>vida:</b> {{ rival.vida.toFixed(2) }} </p>
                 </div>
                 <div class="col-6">
-                    <p> <b>armadura:</b> {{ oponente.armadura }} </p>
-                    <p> <b>dmgAtaque:</b> {{ oponente.dmgAtaque }} </p>
+                    <p> <b>armadura:</b> {{ rival.armadura.toFixed(2) }} </p>
+                    <p> <b>dmgAtaque:</b> {{ rival.dmgAtaque.toFixed(2) }} </p>
                 </div>
                 <div class="col-6">
-                    <p> <b>probCrit:</b> {{ oponente.probCrit }} </p>
-                    <p> <b>dmgCritico:</b> {{ oponente.dmgCritico }} </p>
+                    <p> <b>probCrit:</b> {{ rival.probCrit.toFixed(2) }} </p>
+                    <p> <b>dmgCritico:</b> {{ rival.dmgCritico.toFixed(2) }} </p>
                 </div>
                 <div class="col-6">
-                    <p> <b>precision:</b> {{ oponente.precision }} </p>
-                    <p> <b>agilidad:</b> {{ oponente.agilidad }} </p>
+                    <p> <b>precision:</b> {{ rival.precision.toFixed(2) }} </p>
+                    <p> <b>agilidad:</b> {{ rival.agilidad.toFixed(2) }} </p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row opciones">
+        <div class="col-4 opcion">
+        </div>
+        <div class="col-4 opcion">
+        </div>
+        <div class="col-4 opcion">
+        </div>
     </div>
+</div>
