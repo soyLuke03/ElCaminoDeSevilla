@@ -12,110 +12,67 @@
             {
                 "nombre": "Espada de madera",
                 "estadisticas": {
-                    "vida": 0,
+                    "vidaMax": 0,
                     "dmg": 8,
                     "armadura": 0,
                     "precision": 0,
                     "agilidad": 0,
                     "dmgCritico": 0,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "ESPADA"
             },
             {
                 "nombre": "Espada de madera",
                 "estadisticas": {
-                    "vida": 0,
-                    "dmg": 8,
+                    "vidaMax": 0,
+                    "dmg": 9,
                     "armadura": 0,
                     "precision": 0,
                     "agilidad": 0,
                     "dmgCritico": 0,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "ESPADA"
             },
             {
-                "nombre": "Espada de madera",
+                "nombre": "Daga de asesino",
                 "estadisticas": {
-                    "vida": 0,
-                    "dmg": 8,
+                    "vidaMax": 0,
+                    "dmg": 10,
                     "armadura": 0,
                     "precision": 0,
                     "agilidad": 0,
                     "dmgCritico": 0,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "DAGA"
             },
             {
-                "nombre": "Espada de madera",
+                "nombre": "Casco de cuero",
                 "estadisticas": {
-                    "vida": 0,
+                    "vidaMax": 0,
                     "dmg": 8,
                     "armadura": 0,
                     "precision": 0,
                     "agilidad": 0,
                     "dmgCritico": 0,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "CASCO"
             },
             {
-                "nombre": "Espada de madera",
+                "nombre": "Yelmo de caballero",
                 "estadisticas": {
-                    "vida": 0,
+                    "vidaMax": 0,
                     "dmg": 8,
                     "armadura": 0,
                     "precision": 0,
                     "agilidad": 0,
                     "dmgCritico": 0,
                     "probabilidadCritica": 0
-                }
-            },
-            {
-                "nombre": "Espada de madera",
-                "estadisticas": {
-                    "vida": 0,
-                    "dmg": 8,
-                    "armadura": 0,
-                    "precision": 0,
-                    "agilidad": 0,
-                    "dmgCritico": 0,
-                    "probabilidadCritica": 0
-                }
-            },
-            {
-                "nombre": "Espada de madera",
-                "estadisticas": {
-                    "vida": 0,
-                    "dmg": 8,
-                    "armadura": 0,
-                    "precision": 0,
-                    "agilidad": 0,
-                    "dmgCritico": 0,
-                    "probabilidadCritica": 0
-                }
-            },
-            {
-                "nombre": "Espada de madera",
-                "estadisticas": {
-                    "vida": 0,
-                    "dmg": 8,
-                    "armadura": 0,
-                    "precision": 0,
-                    "agilidad": 0,
-                    "dmgCritico": 0,
-                    "probabilidadCritica": 0
-                }
-            },
-            {
-                "nombre": "Espada de madera",
-                "estadisticas": {
-                    "vida": 0,
-                    "dmg": 8,
-                    "armadura": 0,
-                    "precision": 0,
-                    "agilidad": 0,
-                    "dmgCritico": 0,
-                    "probabilidadCritica": 0
-                }
+                },
+                "tipo": "CASCO"
             }
         ]
     },
@@ -132,14 +89,15 @@
             {
                 "nombre": "Daga oculta",
                 "estadisticas": {
-                    "vida": 0,
+                    "vidaMax": 0,
                     "dmg": 12,
                     "armadura": 0,
                     "precision": 5,
                     "agilidad": 10,
                     "dmgCritico": 0,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "DAGA"
             }
         ]
     },
@@ -156,14 +114,15 @@
             {
                 "nombre": "Tirachinas del chino",
                 "estadisticas": {
-                    "vida": 0,
+                    "vidaMax": 0,
                     "dmg": 7,
                     "armadura": 0,
                     "precision": -5,
                     "agilidad": 15,
                     "dmgCritico": 15,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "TIRACHINAS"
             }
         ]
     },
@@ -180,14 +139,40 @@
             {
                 "nombre": "Espadón de arcilla",
                 "estadisticas": {
-                    "vida": 0,
+                    "vidaMax": 0,
                     "dmg": 10,
                     "armadura": 5,
                     "precision": 0,
                     "agilidad": -15,
                     "dmgCritico": 20,
                     "probabilidadCritica": 0
-                }
+                },
+                "tipo": "ESPADA_A_DOS_MANOS"
+            }
+        ]
+    },
+    {
+        "nombre": "Sucubo",
+        "vidaMax": 200,
+        "armadura": 10,
+        "dmgAtaque": 80,
+        "probCrit": 15,
+        "dmgCritico": 190,
+        "precision": 80,
+        "agilidad": 460,
+        "inventario": [
+            {
+                "nombre": "Garras demoniacas",
+                "estadisticas": {
+                    "vidaMax": 0,
+                    "dmg": 10,
+                    "armadura": 0,
+                    "precision": 0,
+                    "agilidad": 15,
+                    "dmgCritico": 50,
+                    "probabilidadCritica": 1
+                },
+                "tipo": "DAGA"
             }
         ]
     }

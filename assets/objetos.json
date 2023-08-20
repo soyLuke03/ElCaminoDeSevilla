@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "nombre": "Vara necesariamente grande",
         "estadisticas": {
             "vida": 0,
@@ -9,9 +10,11 @@
             "agilidad": -10,
             "dañoCritico": 10,
             "probabilidadCritica": 5
-        }
+        },
+        "tipo": "BACULO"
     },
     {
+        "id":2,
         "nombre": "Espada de madera",
         "estadisticas": {
             "vida": 0,
@@ -21,9 +24,11 @@
             "agilidad": 0,
             "dañoCritico": 0,
             "probabilidadCritica": 0
-        }
+        },
+        "tipo": "ESPADA"
     },
     {
+        "id":3,
         "nombre": "Daga oculta",
         "estadisticas": {
             "vida": 0,
@@ -33,9 +38,11 @@
             "agilidad": 10,
             "dañoCritico": 0,
             "probabilidadCritica": 0
-        }
+        },
+        "tipo": "DAGA"
     },
     {
+        "id":4,
         "nombre": "Tirachinas del chino",
         "estadisticas": {
             "vida": 0,
@@ -45,9 +52,11 @@
             "agilidad": 15,
             "dañoCritico": 15,
             "probabilidadCritica": 0
-        }
+        },
+        "tipo": "TIRACHINAS"
     },
     {
+        "id":5,
         "nombre": "Espadón de arcilla",
         "estadisticas": {
             "vida": 0,
@@ -57,6 +66,77 @@
             "agilidad": -15,
             "dañoCritico": 20,
             "probabilidadCritica": 0
-        }
+        },
+        "tipo": "ESPADA_A_DOS_MANOS"
+    },
+    {
+        "id":6,
+        "nombre": "Arco de palos",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 5,
+            "armadura": 5,
+            "precision": 2,
+            "agilidad": -5,
+            "dañoCritico": 20,
+            "probabilidadCritica": 0
+        },
+        "tipo": "ARCO"
+    },
+    {
+        "id":7,
+        "nombre": "Pechera del vacio",
+        "estadisticas": {
+            "vida": 200,
+            "daño": 20,
+            "armadura": 40,
+            "precision": 0,
+            "agilidad": -50,
+            "dañoCritico": 0,
+            "probabilidadCritica": 0
+        },
+        "tipo": "PECHERA"
+    },
+    {
+        "id":8,
+        "nombre": "Anillo de matrimonio élfico",
+        "estadisticas": {
+            "vida": 150,
+            "daño": -30,
+            "armadura": 5,
+            "precision": 0,
+            "agilidad": 100,
+            "dañoCritico": 0,
+            "probabilidadCritica": 0
+        },
+        "tipo": "ANILLO"
+    },
+    {
+        "id":9,
+        "nombre": "Navajilla 7 muelles",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 50,
+            "armadura": 0,
+            "precision": 0,
+            "agilidad": 50,
+            "dañoCritico": 0,
+            "probabilidadCritica": 0
+        },
+        "tipo": "CUCHILLO"
+    },
+    {
+        "id":10,
+        "nombre": "Rama de abeto futurista",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 20,
+            "armadura": 0,
+            "precision": 0,
+            "agilidad": 90,
+            "dañoCritico": 20,
+            "probabilidadCritica": 0
+        },
+        "tipo": "VARITA"
     }
 ]
