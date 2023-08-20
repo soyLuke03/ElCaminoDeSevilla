@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Enemigo, Personaje, MiniBoss, Boss, Objeto } from '../app/interfaces';
+import { Enemigo, Personaje, MiniBoss, Boss, Objeto, Estadisticas } from '../app/interfaces';
 import { Router } from '@angular/router';
 import { VARIABLES } from './PUBLIC-VARIABLES';
 
@@ -9,6 +9,23 @@ import { VARIABLES } from './PUBLIC-VARIABLES';
 export class CommonService {
 
   constructor(private router: Router) { }
+
+  estadisticasDelInventario: Estadisticas = {
+    vidaMax: 0,
+    dmg: 0,
+    armadura: 0,
+    precision: 0,
+    agilidad: 0,
+    dmgCritico: 0,
+    probabilidadCritica: 0
+  }
+
+  armaEquipada: Objeto | undefined;
+  cascoEquipado: Objeto | undefined;
+  pecheraEquipada: Objeto | undefined;
+  pantalonEquipado: Objeto | undefined;
+  botasEquipadas: Objeto | undefined;
+  manoSecundariaEquipado: Objeto | undefined;
 
   perfil: Personaje = {
     nombre: "Dummy",
@@ -74,8 +91,9 @@ export class CommonService {
       dmgCritico: 0,
       precision: 0,
       probabilidadCritica: 0,
-      vida: 0
+      vidaMax: 0
     },
+    tipo: undefined,
     nombre: "Objeto"
   }
 

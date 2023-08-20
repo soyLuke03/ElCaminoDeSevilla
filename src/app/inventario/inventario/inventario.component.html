@@ -2,7 +2,7 @@
 <hr>
 <div class="container">
     <div class="row">
-        <div class="col-4">
+        <div class="col-3 stats">
             <h4> <b>Info del jugador</b> </h4>
             <div class="row">
                 <div class="col-6">
@@ -27,25 +27,59 @@
                 </div>
             </div>
         </div>
-        
-        
+        <div class="col-3 stats">
+            <h4> <b>Info del equipo</b> </h4>
+            <div class="row">
+                <div class="col-6">
+                    <p> <b>Daño critico:</b> {{ estadisticas.dmgCritico.toFixed(2) }} </p>
+                    <p> <b>Daño:</b> {{ estadisticas.dmg.toFixed(2) }} </p>
+                    <p> <b>Vida:</b> {{ estadisticas.vidaMax }} </p>
+                    <p> <b>Precision:</b> {{ estadisticas.precision.toFixed(2) }} </p>
+                    <p> <b>Armadura:</b> {{ estadisticas.armadura }} </p>
+                    <p> <b>Probabilidad de Critico:</b> {{ estadisticas.probabilidadCritica.toFixed(2) }} </p>
+                    <p> <b>Agilidad:</b> {{ estadisticas.agilidad.toFixed(2) }} </p>
+
+                </div>
+            </div>
+        </div>
         <h3 *ngIf="inventario.length<=0">No tienes objetos todavía</h3>
         <h3 *ngIf="inventario.length>0">Tus objetos</h3>
-        <div class="col-3 objeto" *ngFor="let objeto of inventario">
-            <h5>{{ objeto.nombre }}</h5>
-            <ul>
-                <li>Vida: {{ objeto.estadisticas.vida }}</li>
-                <li>Daño: {{ objeto.estadisticas.dmg }}</li>
-                <li>Armadura: {{ objeto.estadisticas.armadura }}</li>
-                <li>Precision: {{ objeto.estadisticas.precision }}</li>
-                <li>Agilidad: {{ objeto.estadisticas.agilidad }}</li>
-                <li>Dmg Critico: {{ objeto.estadisticas.dmgCritico }}</li>
-                <li>Prob Critica: {{ objeto.estadisticas.probabilidadCritica }}</li>
-            </ul>
-            
-        </div>
-   
         
-   
+            <div class="objeto col-3" *ngFor="let objeto of inventario">
+                <h5>{{ objeto.nombre }}<span> - Tipo: {{ objeto.tipo }}</span></h5>
+                <ul>
+                    <li *ngIf="objeto.estadisticas.vidaMax > 0">Vida: <b style="color: greenyellow;">{{ objeto.estadisticas.vidaMax }}</b></li>
+                    <li *ngIf="objeto.estadisticas.vidaMax < 0">Vida: <b style="color: red;">{{ objeto.estadisticas.vidaMax }}</b></li>
+                    <li *ngIf="objeto.estadisticas.vidaMax == 0">Vida: <b>{{ objeto.estadisticas.vidaMax }}</b></li>
+    
+                    <li *ngIf="objeto.estadisticas.dmg > 0">Daño: <b style="color: greenyellow;">{{ objeto.estadisticas.dmg }}</b></li>
+                    <li *ngIf="objeto.estadisticas.dmg <= 0">Daño: <b style="color: red;">{{ objeto.estadisticas.dmg }}</b></li>
+                    <li *ngIf="objeto.estadisticas.dmg == 0">Daño: <b>{{ objeto.estadisticas.dmg }}</b></li>
+                    
+                    <li *ngIf="objeto.estadisticas.armadura > 0">Armadura: <b style="color: greenyellow;">{{ objeto.estadisticas.armadura }}</b></li>
+                    <li *ngIf="objeto.estadisticas.armadura < 0">Armadura: <b style="color: red;">{{ objeto.estadisticas.armadura }}</b></li>
+                    <li *ngIf="objeto.estadisticas.armadura == 0">Armadura: <b>{{ objeto.estadisticas.armadura }}</b></li>
+                    
+                    <li *ngIf="objeto.estadisticas.precision > 0">Precision: <b style="color: greenyellow;">{{ objeto.estadisticas.precision }}</b></li>
+                    <li *ngIf="objeto.estadisticas.precision < 0">Precision: <b style="color: red;">{{ objeto.estadisticas.precision }}</b></li>
+                    <li *ngIf="objeto.estadisticas.precision == 0">Precision: <b>{{ objeto.estadisticas.precision }}</b></li>
+                    
+                    <li *ngIf="objeto.estadisticas.agilidad > 0">Agilidad: <b style="color: greenyellow;">{{ objeto.estadisticas.agilidad }}</b></li>
+                    <li *ngIf="objeto.estadisticas.agilidad < 0">Agilidad: <b style="color: red;">{{ objeto.estadisticas.agilidad }}</b></li>
+                    <li *ngIf="objeto.estadisticas.agilidad == 0">Agilidad: <b>{{ objeto.estadisticas.agilidad }}</b></li>
+                    
+                    <li *ngIf="objeto.estadisticas.dmgCritico > 0">Dmg Critico: <b style="color: greenyellow;">{{ objeto.estadisticas.dmgCritico }}</b></li>
+                    <li *ngIf="objeto.estadisticas.dmgCritico < 0">Dmg Critico: <b style="color: red;">{{ objeto.estadisticas.dmgCritico }}</b></li>
+                    <li *ngIf="objeto.estadisticas.dmgCritico == 0">Dmg Critico: <b>{{ objeto.estadisticas.dmgCritico }}</b></li>
+                    
+                    <li *ngIf="objeto.estadisticas.probabilidadCritica > 0">Prob Critica: <b style="color: greenyellow;">{{ objeto.estadisticas.probabilidadCritica }}</b></li>
+                    <li *ngIf="objeto.estadisticas.probabilidadCritica < 0">Prob Critica: <b style="color: red;">{{ objeto.estadisticas.probabilidadCritica }}</b></li>
+                    <li *ngIf="objeto.estadisticas.probabilidadCritica == 0">Prob Critica: <b>{{ objeto.estadisticas.probabilidadCritica }}</b></li>
+                </ul>
+                <div>
+                    <button class="botonDeEquipar" *ngIf="!isEquipped(objeto)" (click)="equiparObjeto(objeto)">EQUIPAR</button>
+                    <button class="botonDeDesEquipar" *ngIf="isEquipped(objeto)" (click)="desequiparObjeto(objeto)">DESEQUIPAR</button>
+                </div>
+            </div>
     </div>
 </div>

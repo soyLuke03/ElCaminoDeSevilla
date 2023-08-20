@@ -58,6 +58,9 @@ export class BienvenidoComponent implements OnInit {
       case "Paladin":
         this.asignarAtributos(3);
         break;
+      case "Sucubo":
+        this.asignarAtributos(4);
+        break;
     }
   }
 
@@ -72,6 +75,7 @@ export class BienvenidoComponent implements OnInit {
     this.personaje.precision = parseFloat(this.listaClases[idClase].precision.toFixed(2));
     this.personaje.probCrit = parseFloat(this.listaClases[idClase].probCrit.toFixed(2));
     this.personaje.vidaMax = parseFloat(this.listaClases[idClase].vidaMax.toFixed(2));
+    this.personaje.vida = parseFloat(this.listaClases[idClase].vidaMax.toFixed(2))
   }
 
   crearPerfil() {

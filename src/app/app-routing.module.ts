@@ -32,8 +32,10 @@ const routes: Routes = [
     path: 'inventario',
     component: InventarioComponent
   },
-  {
+  { 
     path: '**',
+    redirectTo: '', // Redirige a la ruta 'bienvenido'
+    pathMatch: 'full', // Solo redirige si la ruta completa no coincide con ninguna otra ruta
     component: BienvenidoComponent
   }
 ];
