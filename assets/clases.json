@@ -77,31 +77,6 @@
         ]
     },
     {
-        "nombre": "Asesino",
-        "vidaMax": 200,
-        "armadura": 20,
-        "dmgAtaque": 80,
-        "probCrit": 40,
-        "dmgCritico": 120,
-        "precision": 90,
-        "agilidad": 410,
-        "inventario": [
-            {
-                "nombre": "Daga oculta",
-                "estadisticas": {
-                    "vidaMax": 0,
-                    "dmg": 12,
-                    "armadura": 0,
-                    "precision": 5,
-                    "agilidad": 10,
-                    "dmgCritico": 0,
-                    "probabilidadCritica": 0
-                },
-                "tipo": "DAGA"
-            }
-        ]
-    },
-    {
         "nombre": "Arquero",
         "vidaMax": 180,
         "armadura": 10,
@@ -123,6 +98,31 @@
                     "probabilidadCritica": 0
                 },
                 "tipo": "TIRACHINAS"
+            }
+        ]
+    },
+    {
+        "nombre": "Asesino",
+        "vidaMax": 200,
+        "armadura": 20,
+        "dmgAtaque": 80,
+        "probCrit": 40,
+        "dmgCritico": 120,
+        "precision": 90,
+        "agilidad": 410,
+        "inventario": [
+            {
+                "nombre": "Daga oculta",
+                "estadisticas": {
+                    "vidaMax": 0,
+                    "dmg": 12,
+                    "armadura": 0,
+                    "precision": 5,
+                    "agilidad": 10,
+                    "dmgCritico": 0,
+                    "probabilidadCritica": 0
+                },
+                "tipo": "DAGA"
             }
         ]
     },

@@ -138,5 +138,19 @@
             "probabilidadCritica": 0
         },
         "tipo": "VARITA"
+    },
+    {
+        "id":11,
+        "nombre": "Espada del rey flipao",
+        "estadisticas": {
+            "vida": 0,
+            "daño": 42,
+            "armadura": 15,
+            "precision": -10,
+            "agilidad": -40,
+            "dañoCritico": 100,
+            "probabilidadCritica": 15
+        },
+        "tipo": "DAGA"
     }
 ]
